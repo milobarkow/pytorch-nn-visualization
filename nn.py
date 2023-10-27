@@ -20,8 +20,8 @@ class NN(nn.Module):
         return self.layers(x)
 
     def export_data(self, data):
-        HOST = '127.0.0.1'  # IP address of the server
-        PORT = 12345  # Port number
+        HOST = '127.0.0.1'
+        PORT = 12345
 
         json_data = json.dumps(data)
 
